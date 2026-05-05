@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg -version)",
+      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(node -e \"console.log\\('Node version:', process.version\\)\")",
+      "Bash(npm list *)",
+      "Bash(npx --yes sharp-cli --version)",
+      "PowerShell(Get-Command ffmpeg -ErrorAction SilentlyContinue)",
+      "PowerShell(if \\(-not $?\\) { \"ffmpeg not found\" })",
+      "Bash(npx --yes @ffmpeg-installer/ffmpeg --version)",
+      "Bash(npm install *)",
+      "Bash(node -e \"console.log\\(require\\('@ffmpeg-installer/ffmpeg'\\).path\\)\")",
+      "Bash('/c/Users/Jvala/OneDrive/Desktop/SITES M2BLACK/Executar Engenharia/node_modules/@ffmpeg-installer/win32-x64/ffmpeg.exe' -version)",
+      "Bash(npx sharp-cli *)",
+      "Bash(node convert.js)",
+      "Bash('/c/Users/Jvala/OneDrive/Desktop/SITES M2BLACK/Executar Engenharia/node_modules/@ffmpeg-installer/win32-x64/ffmpeg.exe' -hide_banner -i '/c/Users/Jvala/OneDrive/Desktop/SITES M2BLACK/Executar Engenharia/VÍDEO 26_27 DIVULGAÇÃO NOVO.mp4')",
+      "Bash(node -e \"const p = require\\('@ffmpeg-installer/ffmpeg'\\).path; console.log\\('PATH:', p\\); console.log\\('EXISTS:', require\\('fs'\\).existsSync\\(p\\)\\);\")",
+      "Bash(node encode-video.js)",
+      "Bash(node encode-video2.js)",
+      "Bash(rm -f convert.js encode-video.js encode-video2.js package.json package-lock.json)",
+      "Bash(rm -rf node_modules)",
+      "Bash(npx --yes http-server -p 5173 -c-1 --silent .)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} | %{size_download} bytes\\\\n\" http://localhost:5173/index.html)",
+      "Bash(curl -s -o /dev/null -w \"logo: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/img/logo.webp)",
+      "Bash(curl -s -o /dev/null -w \"hero.mp4: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/img/hero.mp4)",
+      "Bash(curl -s -o /dev/null -w \"hero.webm: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/img/hero.webm)",
+      "Bash(curl -s -o /dev/null -w \"hero.webp: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/img/hero.webp)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "Bash(npx --version)",
+      "Bash(npx --yes http-server -p 8080 -c-1 --silent)",
+      "Bash(curl -sS -o /dev/null -w \"HTTP %{http_code} | bytes %{size_download}\\\\n\" http://127.0.0.1:8080/index.html)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(mv \"Captura de tela 2026-05-05 092354.png\" \"Captura de tela 2026-05-05 092407.png\" \"Construção financiada.png\" \"Depoimento.mp4\" \"Feedback.jpg\" \"Feedback_.jpg\" _unused/)",
+      "Bash(mv \"IMG-20260205-WA0050.jpg\" \"IMG-20260205-WA0051.jpg\" \"IMG-20260205-WA0052.jpg\" \"IMG-20260422-WA0061.jpg\" \"IMG-20260422-WA0062.jpg\" \"IMG-20260423-WA0040.jpg\" \"IMG-20260423-WA0041.jpg\" \"IMG-20260423-WA0042.jpg\" \"IMG-20260424-WA0012.jpg\" \"IMG-20260424-WA0013.jpg\" \"IMG_20260424_000751.jpg\" _unused/)",
+      "Bash(mv \"LOGO EXECUTAR TRANSPARENTEPrancheta 1 cópia.png\" \"LOGO EXECUTAR TRANSPARENTEPrancheta 1.png\" \"Layout Planta Baixa.png\" \"PADRÃO 2026_2027.png\" _unused/)",
+      "Bash(mv \"Projeto Banheiro Social.png\" \"Projeto Quartos.png\" \"Projeto Sala_Cozinha\\(1\\).png\" \"Projeto Sala_Cozinha.png\" _unused/projetos/)",
+      "Bash(mv \"REUNIÃO DE ONBOARDING - Ruan e Eurípedes [EXECUTAR ENGENHARIA] - 2026_04_22 10_32 GMT-03_00 - Anotações do Gemini.pdf\" \"VÍDEO 26_27 DIVULGAÇÃO NOVO.mp4\" \"index \\(1\\).html\" _unused/)"
+    ]
+  }
+}
