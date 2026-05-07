@@ -36,7 +36,8 @@
       "Bash(mv \"IMG-20260205-WA0050.jpg\" \"IMG-20260205-WA0051.jpg\" \"IMG-20260205-WA0052.jpg\" \"IMG-20260422-WA0061.jpg\" \"IMG-20260422-WA0062.jpg\" \"IMG-20260423-WA0040.jpg\" \"IMG-20260423-WA0041.jpg\" \"IMG-20260423-WA0042.jpg\" \"IMG-20260424-WA0012.jpg\" \"IMG-20260424-WA0013.jpg\" \"IMG_20260424_000751.jpg\" _unused/)",
       "Bash(mv \"LOGO EXECUTAR TRANSPARENTEPrancheta 1 cópia.png\" \"LOGO EXECUTAR TRANSPARENTEPrancheta 1.png\" \"Layout Planta Baixa.png\" \"PADRÃO 2026_2027.png\" _unused/)",
       "Bash(mv \"Projeto Banheiro Social.png\" \"Projeto Quartos.png\" \"Projeto Sala_Cozinha\\(1\\).png\" \"Projeto Sala_Cozinha.png\" _unused/projetos/)",
-      "Bash(mv \"REUNIÃO DE ONBOARDING - Ruan e Eurípedes [EXECUTAR ENGENHARIA] - 2026_04_22 10_32 GMT-03_00 - Anotações do Gemini.pdf\" \"VÍDEO 26_27 DIVULGAÇÃO NOVO.mp4\" \"index \\(1\\).html\" _unused/)"
+      "Bash(mv \"REUNIÃO DE ONBOARDING - Ruan e Eurípedes [EXECUTAR ENGENHARIA] - 2026_04_22 10_32 GMT-03_00 - Anotações do Gemini.pdf\" \"VÍDEO 26_27 DIVULGAÇÃO NOVO.mp4\" \"index \\(1\\).html\" _unused/)",
+      "PowerShell(if \\(-not \\(Test-Path \".claude\"\\)\\) { New-Item -ItemType Directory -Path \".claude\" | Out-Null; \"created\" } else { \"exists\" })"
     ]
   }
 }
