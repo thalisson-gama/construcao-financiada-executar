@@ -9,7 +9,7 @@
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5NL6N28Z');</script>
+  })(window,document,'script','dataLayer','GTM-NLK2XBND');</script>
   <!-- End Google Tag Manager -->
 
   <meta name="theme-color" content="#0F1620" />
@@ -1973,7 +1973,7 @@
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NL6N28Z"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLK2XBND"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
@@ -2938,10 +2938,9 @@
     }
 
     /* ============================================================
-       WEBHOOK ATENDERBEM — CRM de captura de lead
-       (mantido idêntico ao template para preservar o motor)
+       WEBHOOK M² BLACK CRM — captura de lead via Supabase
     ============================================================ */
-    const WEBHOOK_URL = 'https://m2black.atenderbem.com/webhookcapture/capture/e713ba340f1d43f9a97f20faab1afa7f';
+    const WEBHOOK_URL = 'https://nlvjlgjztngiixcpumfe.supabase.co/functions/v1/lp-lead-webhook?token=678c0160-97ec-45db-8c8c-77d6e1ae3aa4';
 
     /* Persistência de UTMs em sessionStorage */
     (function persistUTMs() {
@@ -2996,7 +2995,7 @@
       const utms = getUTMs();
 
       const payload = {
-        // === Padrão AtenderBem (3) ===
+        // === Padrão M² Black CRM (3) ===
         Nome:     document.getElementById('nome').value.trim(),
         Email:    document.getElementById('email').value.trim(),
         WhatsApp: whatsappDigits,
@@ -3041,7 +3040,7 @@
         showSuccess();
       })
       .catch((err) => {
-        console.warn('Webhook AtenderBem falhou:', err);
+        console.warn('Webhook M² Black falhou:', err);
         showSuccess();
       });
 
